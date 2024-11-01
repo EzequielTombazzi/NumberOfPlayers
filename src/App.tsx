@@ -1,12 +1,12 @@
 import React from "react";
-import PlayerCount from "./components/PlayerCount";
+import SteamData from "./components/SteamData";
+import "./styles/App.css";
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Conteo de jugadores de Steam</h1>
-      <PlayerCount appId={550} /> {/* Reemplaza con el appId de tu juego */}
-      {/* Puedes agregar más componentes PlayerCount con diferentes appIds */}
+      <h1>API de Steam en React</h1>
+      <SteamData />
     </div>
   );
 };

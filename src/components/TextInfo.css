@@ -1,0 +1,14 @@
+.info {
+    text-align: center;
+  }
+  
+  .info p {
+    width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: large;
+  }
+  
+  .info a {
+    color: rgb(19, 164, 255);
+  }

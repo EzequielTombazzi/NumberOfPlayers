@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "./SteamData.css";
 
 interface SteamDataResponse {
   response: {
@@ -10,7 +11,7 @@ const SteamData: React.FC = () => {
   const [playerCount, setPlayerCount] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
   const apiKey = "TU_CLAVE_DE_API";
-  const appId = "550"; // ID del juego en Steam (por ejemplo, left 4 dead 2)
+  const appId = "550"; // ID left 4 dead 2
 
   useEffect(() => {
     // Función para obtener datos de la API
@@ -36,12 +37,12 @@ const SteamData: React.FC = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Información del juego en Steam</h2>
+    <div className="banner">
+      <img src="/banner 2 l4d.jpg" alt="l4d banner" />
       {error ? (
         <p>Error: {error}</p>
       ) : (
-        <p>Cantidad de jugadores en línea: {playerCount}</p>
+        <h2>Cantidad de jugadores en línea: {playerCount}</h2>
       )}
     </div>
   );

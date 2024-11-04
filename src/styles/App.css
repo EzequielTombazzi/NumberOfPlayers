@@ -1,12 +1,9 @@
-/* Ejemplo de estilo */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-}
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: black;
+    color: floralwhite;
+    font-style: none;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }

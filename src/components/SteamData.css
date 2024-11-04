@@ -1,0 +1,24 @@
+/* Asegúrate de que el banner no exceda el ancho de la pantalla */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw; /* No excede el ancho de la pantalla */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Ajusta la imagen al contenedor del banner */
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Posiciona el h2 sobre la imagen */
+.banner h2 {
+  position: absolute;
+  margin-top: 250px;
+  color: floralwhite;
+  font-size: 2em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto sombra para mayor legibilidad */
+}
